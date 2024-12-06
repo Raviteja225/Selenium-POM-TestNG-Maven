@@ -2,10 +2,13 @@
 name: Java CI with Maven
 
 on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Enter the sprint branch"
+        type: string
+        required: true
 
-  push:
-
-    branches: [ main ]
 
 jobs:
 
